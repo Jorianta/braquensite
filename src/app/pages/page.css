@@ -1,0 +1,13 @@
+
+:host {
+    display: block;
+    background-color: var(--braqblack);
+    border: var(--braqwhite) 1px solid;
+
+    box-sizing: border-box;
+    margin: 12px 20vw;
+    padding: 12px;
+    min-width: 0px;
+    flex-grow: 1;
+    min-height: 30vh; 
+}

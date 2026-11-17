@@ -1,0 +1,57 @@
+:host{
+    position: relative;
+    width:fit-content;
+    display: block;
+}
+
+#anim{
+    transition: scale 0.1s;
+    width:fit-content;
+}
+
+#anim:hover {
+    animation: rotate 4s infinite ease-in-out;
+    scale: 1.1;
+}
+#anim:not(:hover) {
+    animation: rotate 4s infinite ease-in-out, wobble 4s infinite ease-in-out;
+}
+
+#shadow{
+    animation: rotate 4s infinite ease-in-out, wobble 4s infinite ease-in-out;
+    position: absolute;
+    filter: brightness(0%);
+    top:5px;
+    left:5px;
+    width:fit-content;
+}
+
+/* :host:not(:hover){
+    filter: drop-shadow(5px 5px 0px var(--braqblack))
+}
+:host:hover{
+    filter: drop-shadow(7px 7px 0px var(--braqblack))
+} */
+
+@keyframes rotate {
+    0% {
+        rotate: -1deg;
+    }
+    50% {
+        rotate: 1deg;
+    }
+    100% {
+        rotate: -1deg;
+    }
+}
+@keyframes wobble {
+    0% {
+        transform: rotate3d(1, 2, 0, -10deg);
+    }
+    50% {
+        transform: rotate3d(1, 2, 0, 10deg);
+    }
+    100% {
+        transform: rotate3d(1, 2, 0, -10deg);
+    }
+}

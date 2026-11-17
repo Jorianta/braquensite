@@ -3,9 +3,15 @@
     display: block;
     width:100vw;
     height: 100vh;
-    background: url(/tiledsuites.png) repeat;
+    /* background: url(/tiledsuites.png) space; */
 }
 
 logo-box {
     width: 100vw;
+}
+
+#wrapper{
+    width: 100vw;
+    background-color: var(--braqblack);
+    display: flex;
 }
