@@ -13,7 +13,7 @@ import { RouterLink } from "@angular/router";
                 <br>
                 Tiny is a Gorilla (Ape), and Teeny is a Mandrill (Monkey). Do not call Tiny a monkey, nor Teeny an Ape, or they will be extremely offended.
             </div>
-            <img portrait src="/portraits/teeny_tiny.png">
+            <img width='240' portrait src="/portraits/teeny_tiny.png">
             <div factoid><h3>Preferred Nictoine Source:</h3>Lucky Strikes | Banana Swishers</div>
             <div factoid><h3>Favorite TV Show:</h3>Columbo | Twin Peaks</div>
             <div factoid><h3>Commute Method:</h3>Piggy Back | Unicycle</div>

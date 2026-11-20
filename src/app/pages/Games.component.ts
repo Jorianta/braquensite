@@ -6,7 +6,6 @@ import { RouterLink } from "@angular/router";
     template: ``,
     styleUrl: `./page.css`,
     imports: [
-        RouterLink
     ]
 })
 export class GamesPage {

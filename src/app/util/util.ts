@@ -32,3 +32,14 @@ export function extreme<T>(arr: T[], metric: (a:T,b:T)=>number){
 
     return extreme
 }
+
+export type Social = "Lospec" | "Pixel Joint" | "Bluesky" | "Twitter" | "Tumblr" | "Kofi" | "Website"
+export type Socials = {[K in Social]?: string}
+
+export interface Friend{
+    name: string
+    title?: string
+    socials: Socials
+    portrait?: string
+    website?: string
+}

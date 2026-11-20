@@ -13,7 +13,7 @@ import { DancingLettersComponent } from "../../components/dancing-letters/dancin
                 <br>
                 His departure from the circus was not on good terms, and Braq struggled through a civil suit as a result of his non-compete. Fortunately, he had a <a [routerLink]="'../Teeny_and_Tiny'">crack legal team</a> on his side to get him off scot-free! Now he and his birds are free from the thumb of the man and perform at only the most prestigious street corners and birthday parties.
             </div>
-            <img portrait src="/portraits/braq.png">
+            <img width='144' portrait src="/portraits/braq.png">
             <!-- <div factoids id='factoids'> -->
             <div factoid><h3>Alma Mater:</h3> Ohio State College of the Performing Arts Cleveland</div>
             <!-- </div> -->

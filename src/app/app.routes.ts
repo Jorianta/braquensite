@@ -8,16 +8,17 @@ import { BraqBirdBioPage } from './pages/character-pages/braq-bird-bio.page';
 import { TeenyTinyBioPage } from './pages/character-pages/teeny-tiny-bio.page';
 import { DarrylBioPage } from './pages/character-pages/darryl-bio.page';
 import { BigBirdBioPage } from './pages/character-pages/big-bird-bio.page';
+import { FriendsPage } from './pages/Friends.component';
 
 export const routes: Routes = [
     {
         path: '',
         component: HomePage
     },
-    {
-        path: 'Gallery',
-        component: GalleryPage
-    },
+    // {
+    //     path: 'Gallery',
+    //     component: GalleryPage
+    // },
     {
         path: 'Games',
         component: GamesPage
@@ -25,6 +26,10 @@ export const routes: Routes = [
     {
         path: 'Characters',
         component: CharactersPage,
+    },
+    {
+        path: 'Friends',
+        component: FriendsPage,
     },
     {
         path: 'Characters/Braq',

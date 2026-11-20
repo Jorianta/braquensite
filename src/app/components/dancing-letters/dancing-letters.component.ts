@@ -28,8 +28,4 @@ export class DancingLettersComponent{
     jumping = toSignal(interval(200).pipe(map(v => {
            return (v % this.last_letter())
         })), {initialValue: 0})
-
-    constructor(){
-        effect(() => console.log(this.jumping()))
-    }
 }

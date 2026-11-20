@@ -2,6 +2,7 @@
     position: relative;
     width:fit-content;
     display: block;
+    perspective: 1000px;
 }
 
 #anim{
@@ -18,12 +19,16 @@
 }
 
 #shadow{
-    animation: rotate 4s infinite ease-in-out, wobble 4s infinite ease-in-out;
+    animation: rotate 4s infinite ease-in-out, wobble 4s infinite ease-in-out reverse;
     position: absolute;
     filter: brightness(0%);
     top:5px;
     left:5px;
     width:fit-content;
+}
+#shadow.expand {
+    /* scale: 1.1; */
+    transform: translate(50px, 50px);
 }
 
 /* :host:not(:hover){

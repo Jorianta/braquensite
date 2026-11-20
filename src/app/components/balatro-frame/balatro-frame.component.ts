@@ -4,7 +4,7 @@ import { Component, computed, Directive, effect, ElementRef, HostListener, injec
 @Component({
     selector: "balatro-frame",
     template: `
-        <div id="shadow">
+        <div id="shadow" [class.expand]='hover()'>
              <ng-content select="[shadow]"></ng-content>
         </div>       
         <div id="anim" [style.transform]='transform()'>
@@ -18,6 +18,7 @@ export class BalatroFrameComponent {
 
     private element = inject<ElementRef<HTMLDivElement>>(ElementRef).nativeElement
 
+    hover = signal(false)
     private weight = signal<number>(0)
     private x = signal<number>(0)
     private y = signal<number>(0)
@@ -40,6 +41,8 @@ export class BalatroFrameComponent {
         this.weight.set(weight*25)
         this.x.set(x)
         this.y.set(-y)
+
+        this.hover.set(true)
     }
 
     @HostListener("mouseleave")
@@ -47,5 +50,7 @@ export class BalatroFrameComponent {
         this.weight.set(0)
         this.x.set(0)
         this.y.set(0)
+
+        this.hover.set(false)
     }
 }
